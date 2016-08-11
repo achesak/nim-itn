@@ -97,8 +97,3 @@ proc readITN*(filename : string): seq[ITNRow] =
     ## Parses an ITN file from the given ``filename``.
     
     return parseITN(readFile(filename))
-
-
-var itn = readITN("data.itn")
-for row in itn:
-    echo(row.description & " - " & intToStr(row.longitude) & "," & intToStr(row.latitude))
