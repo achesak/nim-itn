@@ -41,7 +41,7 @@ import strutils
 
 
 type
-    ITNRow* = object
+    ITNRow* = ref object
         longitude* : int
         latitude* : int
         description* : string
